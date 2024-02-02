@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 
-function Button() {
+const Button = ({ onClick, id, text }) => {
   return (
-    <>
-    
-    <button type="button" >Çevir</button>
-    
-    
-    </>
-  )
+    <button
+      onClick={onClick}
+      id={id}
+      type="button"
+        >
+      {text}
+    </button>
+  );
 }
 
 export default Button
